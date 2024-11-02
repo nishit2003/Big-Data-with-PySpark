@@ -1,0 +1,194 @@
+Nishit Grover - M15329773 - Cloud Project 4 Results
+
+1. Requirement already satisfied: pyspark in /opt/anaconda3/lib/python3.12/site-packages (3.5.3)
+Requirement already satisfied: py4j==0.10.9.7 in /opt/anaconda3/lib/python3.12/site-packages (from pyspark) (0.10.9.7)
+Note: you may need to restart the kernel to use updated packages.
+
+2. Successfully downloaded: ./weather_data/2015_72429793812.csv
+Successfully downloaded: ./weather_data/2015_99495199999.csv
+Successfully downloaded: ./weather_data/2016_72429793812.csv
+File not found on server for Year: 2016, Station: 99495199999
+Successfully downloaded: ./weather_data/2017_72429793812.csv
+Successfully downloaded: ./weather_data/2017_99495199999.csv
+Successfully downloaded: ./weather_data/2018_72429793812.csv
+Successfully downloaded: ./weather_data/2018_99495199999.csv
+Successfully downloaded: ./weather_data/2019_72429793812.csv
+Successfully downloaded: ./weather_data/2019_99495199999.csv
+Successfully downloaded: ./weather_data/2020_72429793812.csv
+Successfully downloaded: ./weather_data/2020_99495199999.csv
+Successfully downloaded: ./weather_data/2021_72429793812.csv
+Successfully downloaded: ./weather_data/2021_99495199999.csv
+Successfully downloaded: ./weather_data/2022_72429793812.csv
+Successfully downloaded: ./weather_data/2022_99495199999.csv
+Successfully downloaded: ./weather_data/2023_72429793812.csv
+Successfully downloaded: ./weather_data/2023_99495199999.csv
+Successfully downloaded: ./weather_data/2024_72429793812.csv
+Successfully downloaded: ./weather_data/2024_99495199999.csv
+
+Summary of Rows Processed per Station:
+
+Cincinnati (Station: 72429793812)
+  Year: 2015 --> Rows Processed: 365
+  Year: 2016 --> Rows Processed: 366
+  Year: 2017 --> Rows Processed: 365
+  Year: 2018 --> Rows Processed: 365
+  Year: 2019 --> Rows Processed: 365
+  Year: 2020 --> Rows Processed: 366
+  Year: 2021 --> Rows Processed: 365
+  Year: 2022 --> Rows Processed: 365
+  Year: 2023 --> Rows Processed: 365
+  Year: 2024 --> Rows Processed: 301
+  Total Rows Processed for Cincinnati: 3588
+
+Florida (Station: 99495199999)
+  Year: 2015 --> Rows Processed: 355
+  Year: 2017 --> Rows Processed: 283
+  Year: 2018 --> Rows Processed: 363
+  Year: 2019 --> Rows Processed: 345
+  Year: 2020 --> Rows Processed: 365
+  Year: 2021 --> Rows Processed: 104
+  Year: 2022 --> Rows Processed: 259
+  Year: 2023 --> Rows Processed: 276
+  Year: 2024 --> Rows Processed: 133
+  Total Rows Processed for Florida: 2483
+
+3.  Hottest Days by Year (Cincinnati and Florida):
+
+ Year  |    Station   |                 Station Name                       |    Date      | Maximum Temperature
+-------|--------------|----------------------------------------------------|--------------|---------------------
+ 2015  | 72429793812  | CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US   |  2015-06-12  |                 91.9
+ 2015  | 99495199999  | SEBASTIAN INLET STATE PARK, FL US                  |  2015-07-28  |                 90.0
+
+
+ 2016  | 72429793812  | CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US   |  2016-07-24  |                 93.9
+
+
+ 2017  | 72429793812  | CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US   |  2017-07-22  |                 91.9
+ 2017  | 99495199999  | SEBASTIAN INLET STATE PARK, FL US                  |  2017-05-13  |                 88.3
+
+
+ 2018  | 72429793812  | CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US   |  2018-07-04  |                 96.1
+ 2018  | 99495199999  | SEBASTIAN INLET STATE PARK, FL US                  |  2018-09-15  |                 90.1
+
+
+ 2019  | 72429793812  | CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US   |  2019-09-30  |                 95.0
+ 2019  | 99495199999  | SEBASTIAN INLET STATE PARK, FL US                  |  2019-09-06  |                 91.6
+
+
+ 2020  | 72429793812  | CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US   |  2020-07-05  |                 93.9
+ 2020  | 99495199999  | SEBASTIAN INLET STATE PARK, FL US                  |  2020-04-13  |                 91.8
+
+
+ 2021  | 72429793812  | CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US   |  2021-08-12  |                 95.0
+ 2021  | 99495199999  | SEBASTIAN INLET STATE PARK, FL US                  |  2021-04-18  |                 86.2
+
+
+ 2022  | 72429793812  | CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US   |  2022-06-14  |                 96.1
+ 2022  | 99495199999  | SEBASTIAN INLET STATE PARK, FL US                  |  2022-05-06  |                 89.6
+
+
+ 2023  | 72429793812  | CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US   |  2023-08-23  |                 96.1
+ 2023  | 99495199999  | SEBASTIAN INLET STATE PARK, FL US                  |  2023-07-09  |                 90.9
+
+
+ 2024  | 72429793812  | CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US   |  2024-08-30  |                100.9
+ 2024  | 99495199999  | SEBASTIAN INLET STATE PARK, FL US                  |  2024-05-14  |                 86.7
+
+4.   
+
+Coldest Day in March (2015-2024) across all stations:
+
+ Year  |    Station   |                 Station Name                       |    Date      | Minimum Temperature
+-------|--------------|----------------------------------------------------|--------------|---------------------
+ 2015  | 72429793812  | CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US   |  2015-03-06  |     3.2
+
+5.   
+
+Year with Most Precipitation for Cincinnati and Florida:
+
+ Year  |    Station   |                 Station Name                       | Mean PRCP
+-------|--------------|----------------------------------------------------|----------
+ 2024  | 72429793812  | CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US   | 5.44
+ 2020  | 99495199999  | SEBASTIAN INLET STATE PARK, FL US                  | 0.00
+
+
+6.  
+
+Percentage of Missing Values for Wind Gust (column GUST) in 2024:
+
+Cincinnati: 39.53%
+Florida: 100.00%
+
+7.   
+
+Temperature Statistics for Cincinnati for Each Month in 2020:
+
++-----+------------------+-----------+---------+------------------+
+|MONTH|Mean_TEMP         |Median_TEMP|Mode_TEMP|StdDev_TEMP       |
++-----+------------------+-----------+---------+------------------+
+|1    |37.945161081129505|37.7       |24.7     |8.345810838316384 |
+|2    |36.58965525133856 |36.0       |25.9     |7.901597947537755 |
+|3    |49.0741934007214  |47.8       |39.6     |8.77940669347644  |
+|4    |51.77999992370606 |51.0       |49.4     |7.3131621276074465|
+|5    |60.89032290058751 |63.7       |73.9     |9.314768319579512 |
+|6    |72.54666570027669 |73.7       |70.7     |4.8999458590264515|
+|7    |77.6000001968876  |77.9       |78.4     |2.337947626620972 |
+|8    |73.34516143798828 |73.7       |78.3     |3.4878690606063563|
+|9    |66.09999961853028 |65.8       |74.5     |7.118261579669542 |
+|10   |55.19354851015152 |54.0       |52.2     |6.7286914818367975|
+|11   |48.00333340962728 |47.7       |47.7     |6.825938707865554 |
+|12   |35.99354830095845 |35.2       |32.1     |6.6427872766495755|
++-----+------------------+-----------+---------+------------------+
+
+
+8.     
+
+
+Top 10 Days with the Lowest Wind Chill for Cincinnati in 2017:
+
++------------------------------------------------+----------+----+----+-------------------+
+|NAME                                            |DATE      |TEMP|WDSP|Wind_Chill         |
++------------------------------------------------+----------+----+----+-------------------+
+|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-01-07|10.5|7.0 |-0.4140156367932173|
+|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-12-31|11.0|5.3 |2.0339764741541018 |
+|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-12-27|13.0|5.8 |3.8206452986638073 |
+|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-12-28|13.6|5.8 |4.533355513517824  |
+|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-01-06|13.6|5.5 |4.868933492954463  |
+|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-01-08|15.9|5.2 |7.929747979856229  |
+|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-12-25|25.8|13.5|14.285112249501509 |
+|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-12-30|21.6|5.3 |14.539211503699956 |
+|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-01-05|22.2|5.8 |14.748862551376547 |
+|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-12-26|23.3|6.2 |15.688977064714743 |
++------------------------------------------------+----------+----+----+-------------------+
+
+
+9. 
+Number of days with extreme weather conditions in Florida across all years (excluding 2016): 0
+
+10. 	
+
+--- November Predictions ---
+
+Predicted Maximum Temperature for November 2024 (Average Method): 78.00°F
+
+Regression Model for November:
+Coefficients: [4.0090878636384]
+Intercept: 76.00
+R-squared: 0.9979
+RMSE: 0.0955
+Predicted Maximum Temperature for November 2024 (Regression Method): 84.01°F
+
+--- December Predictions ---
+
+Predicted Maximum Temperature for December 2024 (Average Method): 65.00°F
+
+Regression Model for December:
+Coefficients: [-1.8181818181818135]
+Intercept: 65.91
+R-squared: 0.9917
+RMSE: 0.0909
+Predicted Maximum Temperature for December 2024 (Regression Method): 62.27°F
+                                                                                
+
+
+
